@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+
+
+        }
+
+        body {
+            background: url(./zach-vessels-zlYUCmArB38-unsplash.jpg);
+            z-index: -3;
+            opacity: 1;
+            width: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .container {
+            border: 2px dashed blanchedalmond;
+
+            /*box-shadow: 40px;*/
+            box-shadow: 2px 2px 12px 5px rgb(200, 200, 210) inset;
+            background-repeat: no-repeat;
+            background-size: cover;
+            text-align: center;
+            display: block;
+            align-items: center;
+            margin-top: 90px;
+            margin-left: 450px;
+            margin-right: 450px;
+            padding: 26px;
+            border: 4px solid rgb(62, 57, 57);
+            padding: 40px;
+            box-shadow: 10px;
+            border-radius: 5px;
+            font-size: x-large;
+            font-weight: 600;
+            color: rgb(255, 255, 255);
+
+        }
+
+        .container label:hover {
+            font-weight: 800;
+            color: azure;
+        }
+
+        .container h2 {
+            font-size: x-large;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: rgb(1, 3, 11);
+            background-color: azure;
+            border-radius: 5px;
+
+        }
+        input[type="submit"]{
+            width:222px;
+            padding :4px;
+            background-color: azure;
+            color: black;
+             border :0px 
+        }
+        input[type="submit"]:hover{
+            background-color: blue;
+        }
+
+        button {
+            cursor: pointer;
+            padding: 5px;
+            color: rgb(0, 0, 0);
+            background-color: rgb(165, 165, 169);
+            border: 1px solid rgb(16, 16, 16);
+
+            border-radius: 5px;
+        }
+
+        button:hover {
+            border: 2px rgb(14, 14, 15);
+            background-color: rgba(52, 52, 208, 0.468);
+            padding-left: 10px;
+            font-weight: 700;
+            border-style: groove;
+            border-bottom: 4px seashell;
+        }
+        .error{
+            color: red;
+           
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <form action="" onsubmit="return formvalidate()">
+            
+            <h2>LOGIN</h2>
+            <br><br>
+            <label for="phone">Phone:</label>
+            <input  type="number" name="" id="phone" placeholder="Enter mobile no"><br><br>
+           <br>
+            <label for="email">E-mail:</label>
+            <input  type="email" id="email" placeholder="Enter valid mail"><br><br>
+            <span id='error' class="error"></span>
+            <input type="submit">
+        </form>
+    </div>
+    <script>
+        
+            let error=document.getElementById('error');
+        let num=document.getElementById('phone');
+        let mail=document.getElementById('email');
+
+        let flag=1;
+        function formvalidate(){
+        if(num.length ==0){
+            error.innerHTML="check your number";
+            flag=0;
+        }
+        else if(num.value.length >10){
+            error.innerHTML='enter correct phone number';
+        }
+        else{
+            error.innerHTML="";
+            flag=1;
+        }
+        if(flag==1){
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
+    </script>
+
+
+</body>
+</html>

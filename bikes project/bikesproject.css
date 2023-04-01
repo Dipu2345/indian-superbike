@@ -1,0 +1,473 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: system-ui;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+nav {
+    border: 1px solid black;
+}
+
+.nav-pos {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+@keyframes deba {
+    from {
+        font-weight: 10px;
+        color: rgb(10, 39, 230);
+        font-style: normal;
+        text-decoration: solid;
+
+    }
+
+    to {
+        font-weight: 35px;
+        color: rgb(112, 14, 223);
+        font-style: initial;
+        text-decoration: dotted;
+
+    }
+}
+
+.logo {
+    margin: -5px 17px;
+
+
+}
+
+.top {
+    background-color: #626267;
+
+
+
+
+}
+
+.animation {
+    animation-name: deba;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+.nav-item {
+    transition: 0.3s;
+    text-decoration: none;
+    display: inline-block;
+    color: rgb(32, 6, 6);
+    margin-left: 25px;
+    padding: 7px;
+    font-family: ui-serif;
+    font-size: 3ch;
+    margin-top: 14px;
+    margin-bottom: 17px;
+    border-radius: 10px;
+
+}
+
+.nav-item:hover {
+
+    border: 3px solid black;
+    background-color: rgb(235, 234, 236);
+    color: black;
+    border: none;
+
+}
+
+.nav-register {
+    transition: 0.3s;
+    font-family: ui-serif;
+    margin-top: 10px;
+    font-size: 3ch;
+    color: rgb(24, 22, 22);
+    border-radius: 10px;
+    padding: 5px;
+    margin-left: 500px;
+}
+
+.nav-register:hover {
+    border: 3px solid black;
+    background-color: rgb(235, 234, 236);
+    color: black;
+    border: none;
+}
+
+.nav-login {
+    transition: 0.3s;
+    font-family: ui-serif;
+    margin-top: 10px;
+    margin-left: 20px;
+    font-size: 3ch;
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.nav-login:hover {
+    border: 3px solid black;
+    background-color: rgb(235, 234, 236);
+    color: black;
+    border: none;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgba(164, 158, 169, 0.591);
+}
+
+.hr {
+    padding: 10px;
+    margin: 10px;
+}
+
+.card {
+
+    border-image: fill;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    background-color: rgba(203, 201, 199, 0.356);
+    text-decoration: none;
+    font-family: 'Josefin Sans', sans-serif;
+    border-radius: 8px;
+    transition: 0.3s;
+    overflow: none;
+   
+}
+
+.card:hover {
+    border-bottom: 3px rgb(23, 1, 1) dotted;
+    transition: 3s;
+    transform:translateY(20) ;
+    transform-style: initial;
+   /** border: 3px solid rgba(3, 2, 43, 0.532);*/
+    font-weight: bolder;
+    color: rgba(0, 0, 0, 0.968);
+    cursor: pointer;
+    font-style: initial;
+
+
+}
+
+.row {
+    display: flex;
+    padding-left: 15px;
+    padding-right: 15px;
+    overflow: hidden;
+}
+
+.zx-10-r {
+    border: 0px solid rgba(123, 121, 126, 0.279);
+}
+
+.image-h-w {
+    height: 150px;
+
+}
+
+.margin-images {
+    margin: 10px;
+    border: 2px;
+}
+
+.row {
+    display: flex;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.col-4 {
+    width: 25%;
+}
+
+footer {
+    text-align: center;
+    border: 2px solid rgb(15, 221, 139);
+    background-color: rgb(13, 215, 37);
+}
+
+.float-right {
+    float: right;
+    border: 2px solid red;
+}
+
+
+
+
+.flex-opto{
+    display: flex;
+    overflow: hidden;
+    
+    background-color: rgb(255, 255, 255)
+}
+.card-opto{
+    margin-top: 100px;
+    margin-left: 30px;
+    position: relative;
+    width: 300px;
+    height: 280px;
+    border-radius: 10px;
+    transition: 0.4s;
+    box-shadow: 0px 5px 20px rgba(0,0, 0,0.5);
+    background: rgba(255, 255, 255, 0.502);
+    cursor: pointer;
+}
+.card-opto:hover{
+    height: 340px;
+}
+.imgbox-opto{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform: translateY(-70px);
+    border-radius: 10px;
+    z-index: 99;
+}
+.imgbox-opto img{
+    width: 100%;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.content-opto{
+    padding: 10px 20px;
+    text-align: center;
+    transform: translateY(-300px);
+    opacity: 0;
+    transition: 0.3s;
+}
+.card-opto:hover > .content-opto{
+    opacity: 1;
+    transform: translateY(-230px);
+}
+.offer-opto{
+    border: 2px solid rgb(36, 28, 28);
+    
+    margin-left: 50px;
+    margin-right: 50px;
+    border-radius: 30px;
+    margin-bottom: 30px;
+    padding: -20px;
+    
+}
+.offer-opto:hover{
+    background-color: red;
+}
+.offer-font-opto{
+    font-weight: bold;
+    
+}
+.offer-font-opto:hover{
+    font-style: italic;
+}
+.kawasakilogo {
+    background-color: black;
+    color: white;
+    margin-left: 400px;
+    margin-right: 400px;
+    align-items: center;
+}
+
+.bestsellerborder {
+    border: 3px solid red;
+    background-color: aqua;
+}
+
+.bestsellerborder:hover {
+    text-align: center;
+    text-rendering: geometricPrecision;
+    cursor: alias;
+}
+
+.form {
+    border: 2px solid red;
+
+}
+
+.sticky {
+
+    background-color: darkgrey;
+    margin-left: 280px;
+    margin-right: 280px;
+}
+
+.float-middle {
+    text-overflow: clip;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("new.jpg");
+    text-align: center;
+    justify-content: center;
+    border: 5px solid rgb(10, 156, 10);
+    color: greenyellow;
+    margin-left: 281px;
+    margin-right: 281px;
+}
+
+.hover:hover {
+    font-weight: bolder;
+}
+
+.kawasakibest {
+    border: 3px solid green;
+   
+    margin-left: 400px;
+    margin-right: 400px;
+
+}
+.cont{
+    margin-top: 10px;
+    margin-left: 200px;
+    margin-right: 200px;
+    border-radius: 2px;
+   
+    background-color: #ffffff;
+    text-align: center;
+    align-items: center;
+}
+.cont p{
+    margin-top: 20px;
+    padding-top: 20px;
+   font-family: monospace;
+    color: black;
+    text-transform: capitalize;
+    text-shadow: #6b501b;
+}
+
+.textt{
+    font-size: 20px;
+    font-weight: bolder;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 10px;
+
+}
+.textt :hover{
+    text-decoration: underline;
+}
+.bikes-body-head{
+    border: 0px solid rgb(241, 238, 239);
+    background:linear-gradient(to left,#88888a,#ebe8e9);
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    height: 55px;
+   
+}
+.body-border{
+    border: 2px solid rgb(174, 174, 179);
+    border-radius: 75px;
+    margin-left: 350px;
+    margin-right: 350px;
+    font-weight: 800;
+    font-family: sans-serif;
+}
+.body-border:hover{
+    background:linear-gradient(to left,#88888a,#ebe8e9);
+}
+.body-border a:hover{
+    color: aliceblue;
+    cursor: pointer;
+}
+
+.body-border1{
+    border: 2px solid rgb(180, 180, 184);
+    border-radius: 75px;
+    margin-left: 330px;
+    margin-right: 330px;
+    font-weight: 800;
+    font-family: sans-serif;
+
+}
+.body-border1:hover{
+    background:linear-gradient(to left,#88888a,#ebe8e9);
+}
+.body-border1 a:hover{
+    color: aliceblue;
+    cursor: pointer;
+}
+.body-border2{
+    border: 2px solid rgb(172, 172, 174);
+    border-radius: 75px;
+    margin-left: 310px;
+    margin-right: 310px;
+    font-weight: 800;
+    font-family: sans-serif;
+
+}
+.body-border2:hover{
+    background:linear-gradient(to left,#88888a,#ebe8e9);
+}
+.body-border2 a:hover{
+    color: aliceblue;
+    cursor: pointer;
+}
+.body-border3{
+    border: 2px solid rgb(163, 163, 167);
+    border-radius: 75px;
+    margin-left: 290px;
+    margin-right: 290px;
+    font-weight: 800;
+    font-family: sans-serif;
+
+}
+
+.body-border3:hover{
+    background:linear-gradient(to left,#88888a,#ebe8e9);
+}
+.body-border3 a:hover{
+    color: aliceblue;
+    cursor: pointer;
+}
+.body-border4{
+    border: 2px solid rgb(114, 114, 118);
+    border-radius: 70px;
+    margin-left: 270px;
+    margin-right: 270px;
+    font-weight: 800;
+    font-family: sans-serif;
+
+}
+.body-border4:hover{
+    background:linear-gradient(to left,#88888a,#ebe8e9);
+}
+.body-border4 a:hover{
+    color: aliceblue;
+    cursor: pointer;
+}
+.body-border5{
+    border: 2px solid rgb(157, 157, 163);
+    border-radius: 75px;
+    margin-left: 250px;
+    margin-right: 250px;
+    font-weight: 800;
+    font-family: sans-serif;
+
+}
+.body-border5:hover{
+    background:linear-gradient(to left,#88888a,#ebe8e9);
+}
+.body-border5 a:hover{
+    color: aliceblue;
+    cursor: pointer;
+}
+.social-media{
+  
+    background:linear-gradient(to left,#88888a,#ebe8e9);
+    width: 100%;
+    height: 75px;
+    padding: 5px;
+}
+.social-img{
+    display: flex;
+    padding: 7px;
+    float: right;
+    
+}
